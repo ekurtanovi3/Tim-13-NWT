@@ -3,15 +3,14 @@ package etf.nwt.korisnik;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mysql.jdbc.Connection;
-//import com.mysql.jdbc.Connection;
-//import com.mysql.jdbc.Statement;
+
 
 @Service
 public class KorisnikService  {
@@ -73,6 +72,13 @@ public class KorisnikService  {
 		
 		//korisnici.removeIf(k-> k.getId()== id);
 		korisnikRepository.delete(id);
+	}
+	
+	public List<Korisnik> searchByIme(String word)
+	{
+		List<Korisnik> korisnici= new ArrayList<>();
+		korisnikRepository.findByIme(word).forEach(korisnici::add);
+		return korisnici;
 	}
 	
 	

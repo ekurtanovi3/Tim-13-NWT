@@ -7,51 +7,51 @@ import javax.persistence.Id;
 public class Korisnik {
 	@Id
 	@GeneratedValue
-	private int Id; 
-	private String Ime;
-	private String Prezime;
-	private String Username;
-	private String Password;
+	private int id; 
+	private String ime;
+	private String prezime;
+	private String username;
+	private String password;
 	
 	public Korisnik() {}
 	
 	public Korisnik( String ime, String prezime, String username, String password) {
 		super();
 		
-		Ime = ime;
-		Prezime = prezime;
-		Username = username;
-		Password = password;
+		this.ime = ime;
+		this.prezime = prezime;
+		this.username = username;
+		this.password = password;
 	}
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getIme() {
-		return Ime;
+		return ime;
 	}
 	public void setIme(String ime) {
-		Ime = ime;
+		this.ime = ime;
 	}
 	public String getPrezime() {
-		return Prezime;
+		return prezime;
 	}
 	public void setPrezime(String prezime) {
-		Prezime = prezime;
+		this.prezime = prezime;
 	}
 	public String getUsername() {
-		return Username;
+		return username;
 	}
 	public void setUsername(String username) {
-		Username = username;
+		this.username = username;
 	}
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 	
