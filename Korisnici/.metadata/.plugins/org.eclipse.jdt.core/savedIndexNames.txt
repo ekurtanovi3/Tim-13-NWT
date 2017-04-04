@@ -1,0 +1,2 @@
+INDEX VERSION 1.129+C:\Users\Arza\Desktop\Korisnici\.metadata\.plugins\org.eclipse.jdt.core
+2582384556.index
