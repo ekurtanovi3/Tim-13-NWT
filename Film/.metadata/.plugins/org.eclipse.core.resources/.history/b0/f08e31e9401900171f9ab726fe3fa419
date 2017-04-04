@@ -1,0 +1,58 @@
+package etf.nwt.tim13.film;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FilmController {
+	
+	@Autowired
+	private FilmService filmService;
+
+	@RequestMapping("/films")
+	public List<FilmEntity> getAllFilms()
+	{
+		return filmService.getAllFilms();
+	}
+	
+	@RequestMapping("/films/{id}")
+	public FilmEntity getFilm(@PathVariable int id){
+		return filmService.getFilm(id);
+	}
+	
+	@RequestMapping(method=RequestMethod.POST, value="/films")
+	public void addFilm(@RequestBody FilmEntity film)
+	{
+		filmService.addFilm(film);		
+	}
+	
+	@RequestMapping(method=RequestMethod.PUT, value="/films/{id}")
+	public void updateFilm(@RequestBody FilmEntity film, @PathVariable int id){
+		filmService.updateFilm(id, film);
+	}
+	
+	@RequestMapping(method=RequestMethod.DELETE, value="/films/{id}")
+	public void deleteFilm(@PathVariable int id)
+	{
+		filmService.deleteFilm(id);
+	}
+	
+	@RequestMapping(value="/films/searchByName/{word}")
+	public List<FilmEntity> searchByName(@PathVariable String word)
+	{
+		return filmService.searchByWord(word);
+	}
+	
+	@RequestMapping(value="/films/searchByDirector/{word}")
+	public List<FilmEntity> searchByDirector(@PathVariable String word)
+	{
+		return filmService.searchByDirector(word);
+	}
+}

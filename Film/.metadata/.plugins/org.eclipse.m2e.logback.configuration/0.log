@@ -1,0 +1,127 @@
+2017-04-04 15:26:46,376 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 15:26:50,279 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/main/java
+2017-04-04 15:26:50,280 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:26:50,291 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:26:50,302 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/test/java
+2017-04-04 15:26:50,935 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2017-04-04 15:26:50,937 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-04-04 15:26:51,488 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 15:26:52,187 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/main/java
+2017-04-04 15:26:52,188 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:26:52,189 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:26:52,193 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/test/java
+2017-04-04 15:26:52,503 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-04-04 15:26:56,208 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:26:56,215 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:26:56,226 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:26:56,230 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:26:56,230 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:27:43,022 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:27:43,033 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:27:43,034 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:27:43,037 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:27:43,037 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:28:00,133 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:28:00,133 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:28:00,135 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:28:00,138 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:28:00,138 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:28:47,639 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:28:47,640 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:28:47,642 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:28:47,644 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:28:47,644 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:30:00,215 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:30:00,216 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:30:00,217 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:30:00,219 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:30:00,219 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:30:29,008 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:30:29,008 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:30:29,009 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:30:29,011 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:30:29,011 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:32:48,317 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 15:32:48,692 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:32:48,693 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:32:48,693 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:32:48,695 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:32:48,695 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:32:50,918 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:32:50,919 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:32:50,929 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:32:50,932 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:32:50,932 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:34:19,102 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:34:19,103 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:34:19,105 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:34:19,106 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:34:19,107 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:34:37,534 [Worker-27] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-04-04 15:34:37,945 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 15:34:38,286 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/main/java
+2017-04-04 15:34:38,286 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:34:38,286 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:34:38,286 [Worker-27] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/test/java
+2017-04-04 15:34:38,416 [Worker-27] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-04-04 15:34:39,532 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:34:39,532 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:34:39,541 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:34:39,544 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:34:39,544 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:36:10,232 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:36:10,233 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:36:10,238 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:36:10,240 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:36:10,240 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:38:19,344 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:38:19,345 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:38:19,346 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:38:19,348 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:38:19,348 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:40:39,554 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:40:39,555 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:40:39,557 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:40:39,558 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:40:39,558 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 15:40:46,612 [Worker-37] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-04-04 15:40:46,998 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 15:40:47,303 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/main/java
+2017-04-04 15:40:47,303 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:40:47,303 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 15:40:47,304 [Worker-37] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/test/java
+2017-04-04 15:40:47,410 [Worker-37] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-04-04 15:40:48,683 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:40:48,683 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 15:40:48,691 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 15:40:48,693 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 15:40:48,693 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 16:12:34,284 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @3029678ms
+2017-04-04 16:12:34,456 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-04-04 16:12:34,489 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@783d944f{/help,null,AVAILABLE}
+2017-04-04 16:12:34,504 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@78264bb9{HTTP/1.1,[http/1.1]}{127.0.0.1:52054}
+2017-04-04 16:12:34,505 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @3029900ms
+2017-04-04 16:13:36,678 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:13:36,679 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 16:13:36,685 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 16:13:36,687 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:13:36,687 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 16:13:44,704 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:13:44,705 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 16:13:44,707 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 16:13:44,709 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:13:44,709 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 16:23:44,666 [Worker-62] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-04-04 16:23:45,065 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: etf.nwt.tim13:moviepedia:0.0.1-SNAPSHOT @ D:\skola\nwt\projekat\worspace6\MoviepediaSpring\pom.xml.
+2017-04-04 16:23:45,333 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/main/java
+2017-04-04 16:23:45,334 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 16:23:45,334 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MoviepediaSpring/src/main/resources
+2017-04-04 16:23:45,334 [Worker-62] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MoviepediaSpring/src/test/java
+2017-04-04 16:23:45,435 [Worker-62] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-04-04 16:23:46,510 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:23:46,510 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-04 16:23:46,519 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-04 16:23:46,521 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-04 16:23:46,521 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\skola\nwt\projekat\worspace6\MoviepediaSpring\src\test\resources
+2017-04-04 16:23:48,813 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@78264bb9{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-04-04 16:23:48,826 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@783d944f{/help,null,UNAVAILABLE}

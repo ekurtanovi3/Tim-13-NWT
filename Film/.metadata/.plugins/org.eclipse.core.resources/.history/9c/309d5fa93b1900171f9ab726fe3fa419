@@ -1,0 +1,5 @@
+package etf.nwt.tim13.film;
+
+public class FilmEntity {
+
+}
