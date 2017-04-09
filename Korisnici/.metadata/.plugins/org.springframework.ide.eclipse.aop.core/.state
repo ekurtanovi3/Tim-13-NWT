@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="webapp"/>
 <aop-project name="korisnici-api-data"/>
+<aop-project name="config-service"/>
 </aop-reference-model>
