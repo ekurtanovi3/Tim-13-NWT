@@ -43,4 +43,15 @@ public class GlumciController {
 	{
 		GlumciService.deleteGlumci(id);
 	}
+	
+	@RequestMapping(method=RequestMethod.GET, value="/Glumci/searchByName/{name}")
+	public void deleteGlumci(@PathVariable String name)
+	{
+		GlumciService.searchByName(name);
+	}
+	@RequestMapping(method=RequestMethod.GET, value="/Glumci/searchByLastName/{lastName}")
+	public void deleteGlumci(@PathVariable String lastName)
+	{
+		GlumciService.searchByLastName(lastName);
+	}
 }

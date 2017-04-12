@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-
-
 @Service
 public class GlumciService {
 	
@@ -41,8 +39,8 @@ public class GlumciService {
 		return GlumciRepository.findOne(id);
 	}
 
-	public void addGlumci(Glumci glumci) {
-		GlumciRepository.save(glumci);		
+	public void addGlumac(Glumci glumac) {
+		GlumciRepository.save(glumac);		
 	}
 
 
@@ -56,8 +54,18 @@ public class GlumciService {
 		
 	}
 	
-	
-	// new services
-	
+	public List<Glumci> searchByName(name){
+		//return glumci;
+		List<Glumci> glumci = new ArrayList<>();
+		 GlumciRepository.findByName(name).forEach(glumci::add);
+		 return glumci;
+	}
+	public List<Glumci> searchByLastName(lastName){
+		
+		//return glumci;
+		List<Glumci> glumci = new ArrayList<>();
+		GlumciRepository.findByLastName(lastName).forEach(glumci::add);
+		return glumci;
+	}
 	
 }
