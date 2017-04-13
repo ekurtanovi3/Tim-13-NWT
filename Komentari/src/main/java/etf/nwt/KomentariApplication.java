@@ -22,9 +22,9 @@ public class KomentariApplication implements CommandLineRunner {
 	public void run(String... arg0) throws Exception {
 		
 		Komentari[] komentariArray= {
-			new Komentari("komentar1TekstKomentara"),
-			new Komentari("komentar2TekstKomentara"),
-			new Komentari("komentar1TekstKomentara")
+			new Komentari("komentar1TekstKomentara", 1, 1),
+			new Komentari("komentar2TekstKomentara", 2, 2),
+			new Komentari("komentar3TekstKomentara", 3, 3)
 		};
 		
 		for (Komentari komentari : komentariArray) {

@@ -48,5 +48,17 @@ public class KomentariService {
 		
 	}
 	
+	public List<Komentari> getForMovie(long id) {
+		List<Komentari> Komentari = new ArrayList<>();
+		KomentariRepository.getForMovie(id).forEach(Komentari::add);
+		return Komentari;
+	}
+	
+	public List<Komentari> getForUser(long id) {
+		List<Komentari> Komentari = new ArrayList<>();
+		KomentariRepository.getForUser(id).forEach(Komentari::add);
+		return Komentari;
+	}
+	
 	
 }

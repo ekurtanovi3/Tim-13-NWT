@@ -44,5 +44,17 @@ public class KomentariController {
 	{
 		KomentariService.deleteKomentari(id);
 	}
+	
+	@RequestMapping("/komentariPoFilmu/{id}")
+	public List<Komentari> getForMovie(@PathVariable long id)
+	{
+		return KomentariService.getForMovie(id);
+	}
+	
+	@RequestMapping("/komentariPoUseru/{id}")
+	public List<Komentari> getForUser(@PathVariable long id)
+	{
+		return KomentariService.getForUser(id);
+	}
 }
 
