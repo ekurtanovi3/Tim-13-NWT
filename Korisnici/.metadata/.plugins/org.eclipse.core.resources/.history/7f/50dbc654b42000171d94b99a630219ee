@@ -23,8 +23,6 @@ public class KorisnikController {
 	 
 	 }
 	
-
-	
 	@RequestMapping("/Korisnici/{id}")
 	public Korisnik getKorisnik(@PathVariable int id)
 {

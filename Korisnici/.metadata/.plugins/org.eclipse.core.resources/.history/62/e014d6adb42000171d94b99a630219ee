@@ -27,16 +27,15 @@ public class KorisnikService  {
 //			 
 //			 ));
 //	
-
-	
-	public List<Korisnik> getAllKorisnici(){
+	public List<Korisnik> getAllKorisniciDesc(){
 
 		List<Korisnik> korisnici = new ArrayList<>();
-		korisnikRepository.findAll().forEach(korisnici::add);
+		korisnikRepository.findAll(new Sort(Sort.Direction.DESC, "<id>")).forEach(korisnici::add);
 		return korisnici;
 		
 	 }
 	
+
 	
 	public Korisnik getKorisnik(int id)
 	{

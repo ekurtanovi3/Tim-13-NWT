@@ -3155,3 +3155,28 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2017-04-14 03:38:08,598 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-04-14 03:38:08,606 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-04-14 03:38:08,606 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources
+2017-04-14 03:47:46,943 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:47:46,953 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-14 03:47:46,976 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-14 03:47:46,982 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:47:46,982 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources
+2017-04-14 03:47:52,519 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:47:52,531 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-14 03:47:52,550 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-14 03:47:52,559 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:47:52,560 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources
+2017-04-14 03:48:24,857 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:48:24,859 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-14 03:48:25,023 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-14 03:48:25,028 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:48:25,029 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources
+2017-04-14 03:50:06,448 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:50:06,755 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-14 03:50:06,889 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-14 03:50:06,893 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:50:06,893 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources
+2017-04-14 03:50:11,988 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:50:11,989 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-04-14 03:50:12,155 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-04-14 03:50:12,159 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-04-14 03:50:12,204 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data\src\test\resources

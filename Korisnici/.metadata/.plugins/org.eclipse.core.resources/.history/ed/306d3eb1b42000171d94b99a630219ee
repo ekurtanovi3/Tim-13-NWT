@@ -23,7 +23,13 @@ public class KorisnikController {
 	 
 	 }
 	
-
+	
+	findAll(new Sort(Sort.Direction.DESC, "<colName>"))
+	@RequestMapping("/Korisnici/Desc")
+	public List<Korisnik> getAllKorisniciDesc()
+	 { return korisnikService.getAllKorisniciDesc();
+	 
+	 }
 	
 	@RequestMapping("/Korisnici/{id}")
 	public Korisnik getKorisnik(@PathVariable int id)
