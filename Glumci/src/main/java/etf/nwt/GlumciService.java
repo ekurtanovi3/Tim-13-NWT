@@ -54,17 +54,24 @@ public class GlumciService {
 		
 	}
 	
-	public List<Glumci> searchByName(name){
+	public List<Glumci> searchByName(String name){
 		//return glumci;
 		List<Glumci> glumci = new ArrayList<>();
 		 GlumciRepository.findByName(name).forEach(glumci::add);
 		 return glumci;
 	}
-	public List<Glumci> searchByLastName(lastName){
+	public List<Glumci> searchByLastName(String lastName){
 		
 		//return glumci;
 		List<Glumci> glumci = new ArrayList<>();
 		GlumciRepository.findByLastName(lastName).forEach(glumci::add);
+		return glumci;
+	}
+	
+	public List<Glumci> getListGlumciById(Integer[] glumciIds){
+		
+		List<Glumci> glumci = new ArrayList<>();
+		GlumciRepository.getListGlumciById(glumciIds).forEach(glumci::add);
 		return glumci;
 	}
 	

@@ -45,13 +45,21 @@ public class GlumciController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET, value="/Glumci/searchByName/{name}")
-	public void deleteGlumci(@PathVariable String name)
+	public void searchByName(@PathVariable String name)
 	{
 		GlumciService.searchByName(name);
 	}
 	@RequestMapping(method=RequestMethod.GET, value="/Glumci/searchByLastName/{lastName}")
-	public void deleteGlumci(@PathVariable String lastName)
+	public void searchByLastName(@PathVariable String lastName)
 	{
 		GlumciService.searchByLastName(lastName);
+	}
+	
+	// GET http://localhost:8080/Glumci/test/1,2,3,4 poziv za metodu ispod
+	
+	@RequestMapping(value="/Glumci/GetListGlumciById/{firstNameIds}", method=RequestMethod.GET)
+	public List<Glumci> getListGlumciById(@PathVariable Integer[] glumciIds) //moze i string primit ako bude problem
+	{
+		return GlumciService.getListGlumciById(glumciIds);
 	}
 }

@@ -9,33 +9,17 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
-
+import org.springframework.data.jpa.repository.Query;
 
 public interface GlumciRepository extends CrudRepository<Glumci, Integer> {
-	public List<Glumci> findByName(name);
-	public List<Glumci> findByLastName(lastName);
 	
+	@Query ("SELECT g FROM Glumci g  WHERE g.FirstName= ?1")
+	public List<Glumci> findByName(String name);
 	
-	Connection con=null;
-		
-			private ResultSet getResultSet(String command) // throws SQLException 
-		    {
-
-		        Statement stmt = null;
-
-		        try 
-		        {
-		            stmt = con.createStatement();
-		            ResultSet rs = stmt.executeQuery(command);
-		            return rs;
-		        } 
-
-		        catch (Exception e ) 
-		        {
-		            e.printStackTrace();
-		        } 
-
-		        return null;
-
-		    }
+	@Query ("SELECT g FROM Glumci g  WHERE g.LastName= ?1")
+	public List<Glumci> findByLastName(String lastName);
+	
+	@Query ("SELECT g FROM Glumci g  WHERE g.GlumacID IN ?1")
+	public List<Glumci> getListGlumciById(Integer[] glumciIds)
+	
 }
