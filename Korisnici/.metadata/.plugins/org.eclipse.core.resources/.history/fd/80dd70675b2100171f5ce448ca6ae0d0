@@ -68,12 +68,6 @@ public class WatchlistService  {
 		watchlistRepository.delete(id);
 	}
 	
-	public List<Integer> findByKorisnikid(int korisnikid) {
-		List<Integer> filmovi = new ArrayList<>();
-		watchlistRepository.findByKorisnikid(korisnikid).forEach(filmovi::add);
-		return filmovi;
-	}
-	
 
 	
 	

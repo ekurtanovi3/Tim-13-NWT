@@ -42,12 +42,7 @@ public class WatchlistController {
 		watchlistService.updateWatchlist(Watchlist);
 	}
 	
-	@RequestMapping(value="/Watchlist/findByKorisnikid/{korisnikid}")
-	public List<Integer> findByKorisnikid(@PathVariable int korisnikid)
-	{
-		return watchlistService.findByKorisnikid(korisnikid);
-	}
-	
+
 	
 	
 	@RequestMapping(method=RequestMethod.DELETE, value="/Watchlist/{id}")

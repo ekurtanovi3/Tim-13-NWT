@@ -10,8 +10,8 @@ import org.springframework.data.repository.query.Param;
 
 public interface WatchlistRepository extends CrudRepository<Watchlist,Integer> {
 
-	@Query("SELECT k.filmid FROM Watchlist k WHERE k.korisnikid=?1")
-	public List<Integer> findByKorisnikid(@Param("korisnikid")int korisnikid);
+	@Query("SELECT k FROM Watchlist k WHERE k.korisnikid=?1")
+	public List<int> findFilmidByKorisnikId(@Param("korisnikid")int korisnik);
 	
 	
 }
