@@ -42,9 +42,10 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici"/>
+			<item value="C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data"/>
 			<item value="C:\Users\Arza\Desktop\test-master\config-service"/>
 			<item value="C:\Users\Arza\Desktop\test-master\eureka-service"/>
-			<item value="C:\Users\Arza\Desktop\Tim-13-NWT\Korisnici\korisnici-api-data"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

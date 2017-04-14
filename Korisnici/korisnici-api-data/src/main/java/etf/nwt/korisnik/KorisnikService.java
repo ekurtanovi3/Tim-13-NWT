@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.mysql.jdbc.Connection;
@@ -74,12 +75,33 @@ public class KorisnikService  {
 		korisnikRepository.delete(id);
 	}
 	
-	public List<Korisnik> searchByIme(String word)
-	{
-		List<Korisnik> korisnici= new ArrayList<>();
-		korisnikRepository.findByIme(word).forEach(korisnici::add);
+	
+	public List<Korisnik> findByIme(String ime) {
+		List<Korisnik> korisnici = new ArrayList<>();
+		korisnikRepository.findByIme(ime).forEach(korisnici::add);
 		return korisnici;
 	}
+
+	public List<Korisnik> findByUsername(String username) {
+		List<Korisnik> korisnici = new ArrayList<>();
+		korisnikRepository.findByUsername(username).forEach(korisnici::add);
+		return korisnici;
+	}
+
+
+	
+
+	//  public List<Korisnik> findAll() {
+	//	  List<Korisnik> korisnici = new ArrayList<>();
+	//		korisnikRepository.findAll(sortByIdAsc()).forEach(korisnici::add);
+		//	return korisnici(sortByIdAsc());
+	      
+	   // }
+
+	
+	 private Sort sortByIdAsc() {
+	        return new Sort(Sort.Direction.ASC, "id");
+	    }
 	
 	
 	// new services za sve 

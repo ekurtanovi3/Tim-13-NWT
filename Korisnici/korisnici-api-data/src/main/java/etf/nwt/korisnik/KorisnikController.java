@@ -47,10 +47,23 @@ public class KorisnikController {
 	{
 		korisnikService.deleteKorisnik(id);
 }
-	@RequestMapping(value="/Korisnici/searchByIme/{word}")
-	public List<Korisnik> searchByIme(@PathVariable String word)
+	
+	
+
+	@RequestMapping(value="/Korisnici/findByIme/{ime}")
+	public List<Korisnik> findByIme(@PathVariable String ime)
 	{
-		return korisnikService.searchByIme(word);
+		return korisnikService.findByIme(ime);
 	}
 	
-}
+	
+
+	@RequestMapping(value="/Korisnici/findByUsername/{username}")
+	public List<Korisnik> findByUsername(@PathVariable String username)
+	{
+		return korisnikService.findByUsername(username);
+	}
+	
+	
+	
+	}
