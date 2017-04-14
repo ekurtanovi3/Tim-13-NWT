@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="save" key="selection"/>
+		<item value="&#x09;public void updateWatchlist(@RequestBody Watchlist watchlist)" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&#x09;public void updateWatchlist(@RequestBody Watchlist watchlist)"/>
+			<item value="&#x0D;&#x0A;spring.application.name=korisnici  &#x0D;&#x0A;# N.B. this is the default:&#x0D;&#x0A;spring.cloud.config.uri=http://localhost:8888&#x0D;&#x0A;management.security.enabled=false"/>
 			<item value="save"/>
 		</list>
 		<list key="replacehistory">
