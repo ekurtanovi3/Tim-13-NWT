@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+
+
 @Service
 public class GlumciService {
 	
@@ -17,14 +19,14 @@ public class GlumciService {
 	private GlumciRepository GlumciRepository;
 	
 
-	Image wall = null;
+	//Image wall = null;
 	
 	
-	private List<Glumci> glumci= new ArrayList<>(Arrays.asList(
+/*	private List<Glumci> glumci= new ArrayList<>(Arrays.asList(
 			
 			new Glumci("firstName",  "lastName", new Date(), "biografy", wall ),
 			new Glumci("firstName",  "lastName", new Date(), "biografy", wall )
-			));
+			));*/
 	
 	public List<Glumci> getAllGlumci(){
 		
@@ -39,8 +41,8 @@ public class GlumciService {
 		return GlumciRepository.findOne(id);
 	}
 
-	public void addGlumac(Glumci glumac) {
-		GlumciRepository.save(glumac);		
+	public void addGlumci(Glumci glumci) {
+		GlumciRepository.save(glumci);		
 	}
 
 
@@ -48,31 +50,14 @@ public class GlumciService {
 		GlumciRepository.delete(id);
 	}
 
-	public void updateGlumci(int id, Glumci glumci) {
-		int x=id;
+	public void updateGlumci(Glumci glumci) {
+		
 		GlumciRepository.save(glumci);
 		
 	}
 	
-	public List<Glumci> searchByName(String name){
-		//return glumci;
-		List<Glumci> glumci = new ArrayList<>();
-		 GlumciRepository.findByName(name).forEach(glumci::add);
-		 return glumci;
-	}
-	public List<Glumci> searchByLastName(String lastName){
-		
-		//return glumci;
-		List<Glumci> glumci = new ArrayList<>();
-		GlumciRepository.findByLastName(lastName).forEach(glumci::add);
-		return glumci;
-	}
 	
-	public List<Glumci> getListGlumciById(Integer[] glumciIds){
-		
-		List<Glumci> glumci = new ArrayList<>();
-		GlumciRepository.getListGlumciById(glumciIds).forEach(glumci::add);
-		return glumci;
-	}
+	// new services
+	
 	
 }

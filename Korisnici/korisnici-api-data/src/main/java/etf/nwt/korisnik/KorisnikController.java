@@ -1,3 +1,4 @@
+
 package etf.nwt.korisnik;
 
 
@@ -22,8 +23,6 @@ public class KorisnikController {
 	 { return korisnikService.getAllKorisnici();
 	 
 	 }
-	
-
 	
 	@RequestMapping("/Korisnici/{id}")
 	public Korisnik getKorisnik(@PathVariable int id)

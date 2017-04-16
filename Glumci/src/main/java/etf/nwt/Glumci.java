@@ -2,18 +2,18 @@ package etf.nwt;
 
 import java.awt.Image;
 import java.util.Date;
+//import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Entity
 public class Glumci {
 	
 	@Id
 	@GeneratedValue
-	private Integer GlumacID;
+	private int GlumacID;
 	
 	private String FirstName;
 	
@@ -23,23 +23,20 @@ public class Glumci {
 	
 	private String Biografy;
 	
-	private Image Image;
+	//private Image Image;
 	
 	public Glumci(){}
 
 
-	public Glumci(String firstName, String lastName, Date dateOfBirth, String biografy, java.awt.Image image) {
+	public Glumci(String firstName, String lastName, /* Date dateOfBirth,*/ String biografy /*, java.awt.Image image*/) {
 		super();
 		FirstName = firstName;
 		LastName = lastName;
-		DateOfBirth = dateOfBirth;
+		DateOfBirth = new Date();
 		Biografy = biografy;
-		Image = image;
+		//Image = image;
 	}
-	@Override
-	public String toString() {
-		return ToStringBuilder.reflectionToString(this);
-	}
+
 
 	public int getGlumacID() {
 		return GlumacID;
@@ -91,14 +88,14 @@ public class Glumci {
 	}
 
 
-	public Image getImage() {
+/*	public Image getImage() {
 		return Image;
 	}
 
 
 	public void setImage(Image image) {
 		this.Image = image;
-	}
+	}*/
 
 
 

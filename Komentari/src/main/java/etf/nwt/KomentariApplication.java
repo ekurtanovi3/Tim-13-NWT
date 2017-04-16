@@ -6,10 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 public class KomentariApplication implements CommandLineRunner {
 
 	@Autowired
@@ -22,9 +23,9 @@ public class KomentariApplication implements CommandLineRunner {
 	public void run(String... arg0) throws Exception {
 		
 		Komentari[] komentariArray= {
-			new Komentari("komentar1TekstKomentara", 1, 1),
-			new Komentari("komentar2TekstKomentara", 2, 2),
-			new Komentari("komentar3TekstKomentara", 3, 3)
+			new Komentari("komentar1TekstKomentara"),
+			new Komentari("komentar2TekstKomentara"),
+			new Komentari("komentar1TekstKomentara")
 		};
 		
 		for (Komentari komentari : komentariArray) {

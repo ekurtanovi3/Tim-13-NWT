@@ -57,4 +57,3 @@ public class KomentariController {
 		return KomentariService.getForUser(id);
 	}
 }
-

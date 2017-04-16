@@ -1,3 +1,4 @@
+
 package etf.nwt.korisnik;
 
 import java.sql.ResultSet;
@@ -27,8 +28,6 @@ public class KorisnikService  {
 //			 
 //			 ));
 //	
-
-	
 	public List<Korisnik> getAllKorisnici(){
 
 		List<Korisnik> korisnici = new ArrayList<>();
@@ -37,6 +36,7 @@ public class KorisnikService  {
 		
 	 }
 	
+
 	
 	public Korisnik getKorisnik(int id)
 	{

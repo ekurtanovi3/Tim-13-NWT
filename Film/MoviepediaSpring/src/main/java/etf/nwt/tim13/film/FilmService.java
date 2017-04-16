@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 
 import com.mysql.jdbc.Connection;
 
+import etf.nwt.tim13.actor_movie.Actor_Movie_Repository;
+import etf.nwt.tim13.actor_movie.Actor_Movie_Service;
+
 @Service
 public class FilmService {
 	
@@ -22,6 +25,11 @@ public class FilmService {
 			new FilmEntity("film2", "description2", "director2", 22),
 			new FilmEntity("film3", "description3", "director3", 33)
 			));
+	
+	@Autowired 
+	private Actor_Movie_Service amService;
+	@Autowired
+	private Actor_Movie_Repository amRepository;
 	
 	public List<FilmEntity> getAllFilms(){
 		
@@ -63,6 +71,33 @@ public class FilmService {
 		List<FilmEntity> films= new ArrayList<>();
 		filmRepository.findByDirectorContaining(director).forEach(films::add);
 		return films;
+	}
+	
+	public List<FilmEntity> searchByActor(int actor)
+	{
+		List<FilmEntity> films= new ArrayList<>();
+		//filmRepository.findByActorContaining(actor);
+		return films;
+	}
+	
+	public List<Integer> findMoviesIDsByActor(Integer actorId) {
+		return amService.findMoviesIDsByActor(actorId);
+		
+	}
+	
+	public List<FilmEntity> findFilmoveOdGlumca(Integer actorId){
+		List<FilmEntity> filmovi= new ArrayList<>();
+		List<Integer> ids= amRepository.findMoviesIDsByActor(actorId);
+		
+		for (int i=0; i<ids.size(); i++)
+		{
+			
+				filmovi.add(filmRepository.findOne(ids.get(i)));
+			
+		}
+		
+		return filmovi;
+		
 	}
 	
 	// new services za sve 
