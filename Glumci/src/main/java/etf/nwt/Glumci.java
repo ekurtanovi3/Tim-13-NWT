@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Entity
 public class Glumci {
@@ -35,7 +36,10 @@ public class Glumci {
 		Biografy = biografy;
 		Image = image;
 	}
-
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
 
 	public int getGlumacID() {
 		return GlumacID;
