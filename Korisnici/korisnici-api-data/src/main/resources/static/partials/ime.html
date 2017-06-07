@@ -1,0 +1,26 @@
+
+
+<div class="container-border">
+<div class=" text-center"></div>
+  <div class="row">
+      <div class="col-sm-2">
+    </div>
+    <div class="col-sm-3">
+       <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTE5MTcwNTU5NV5BMl5BanBnXkFtZTYwNTg0ODgz._V1_.jpg"  height="320"  width="100%">
+       <br><br>
+    </div>
+    <div class="col-sm-5">
+    <div class="well well-sm">
+  <h4>{{glumac.firstName}} {{glumac.lastName}}</h4>
+</div>
+      <p>Biografija: {{glumac.biografy}}</p>
+      <p>Datum rodenja: {{glumac.dateOfBirth | date:"dd.MM.yyyy."}}</p>
+      <span>Filmovi: </span>
+      <span ng-repeat="x in glumacFilmovi"> 
+      {{x.name}}, 
+      </span>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>

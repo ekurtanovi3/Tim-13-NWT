@@ -1,0 +1,95 @@
+
+
+<div class="container-border">
+<div class=" text-center"></div>
+  <div class="row">
+      <div class="col-sm-2">
+    </div>
+    <div class="col-sm-3">
+       <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTE5MTcwNTU5NV5BMl5BanBnXkFtZTYwNTg0ODgz._V1_.jpg"  height="320"  width="100%">
+       <br><br>
+    </div>
+    <div class="col-sm-5">
+    <div class="well well-sm">
+  <h4>{{film.name}}</h4>
+</div>
+      <p> {{film.description}}</p>
+      <p>Direktor: {{film.director}}</p>
+      <span>Glumci: </span>
+      <span ng-repeat="x in filmGlumci"> 
+      {{x.firstNname}} {{x.lastNname}}, 
+      </span>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>
+
+
+
+  <style>
+  div.container{
+  max-width:600px;
+  }
+  </style>
+
+
+<div class="container">
+  
+  <div class="container">
+    <h2>Komentari: </h2><br>
+  
+  <h3>Pošalji komentar: </h3>
+  <form>
+    <div class="form-group">
+      <label for="comment">Komentar:</label>
+      <textarea class="form-control" rows="5" id="comment" ng-model="tekstKomentara"></textarea>
+    </div>
+  </form>
+  <button ng-controller="slanjeKomentaraController" ng-click="posaljiKomentar(tekstKomentara)">Pošalji</button><br><br>
+
+  <hr>
+
+  
+  <!-- Left-aligned media object -->
+  <div class="media" ng-repeat="x in komentariFilm">
+    <div class="media-left" >
+      <img src="img_avatar1.png" class="media-object" style="width:50px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Anonymus</h4>
+      <p>{{x.tekstKomentara}}<p>
+    </div>
+      <hr>
+
+  </div>
+  
+  <!-- Right-aligned media object -->
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">Right-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="media-right">
+      <img src="img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.komentari = [{ "name":"John", "age":31, "city":"New York dsjdhsjdashsdsdas\nsdasdsadksajdlkasjdlsadksadlsak\ndsdskjdksjdlksajdlksajdlksdlskajdlaskdj sdjskdjksaljdlskajdlksjdksdksjdls" },{ "name":"John1", "age":311, "city":"New York1" },{ "name":"John2", "age":312, "city":"New York64546" }
+    ];
+});
+</script>
+
+
+
+
+
+
+

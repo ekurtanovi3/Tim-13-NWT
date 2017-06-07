@@ -1,0 +1,20 @@
+<div id="korisniciTest"  ng-controller="korisniciController">
+  <h2>Korisnici</h2>
+  <p>Ova tabela sadrži sve korisnike:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+      </tr>
+    </thead>
+    <tbody>    
+      <tr ng-repeat="x in sviKorisnici| orderBy:'prezime'">
+        <td>{{x.id}}</td>
+        <td>{{x.ime}}</td>
+        <td>{{x.prezime}}</td>
+     </tr>
+    </tbody>
+  </table>
+</div>

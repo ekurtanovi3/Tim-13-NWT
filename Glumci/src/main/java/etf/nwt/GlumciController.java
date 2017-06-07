@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+@CrossOrigin
 @RestController
 public class GlumciController {
 	
@@ -47,11 +49,19 @@ public class GlumciController {
 	{
 		GlumciService.deleteGlumci(id);
 	}
-	
+	/*
 	@RequestMapping(value="/Glumci/getMoviesById/{id}")
 	public String getMoviesById(@PathVariable("id") Integer id)
 	{
 		String name=restTemp.getForObject("http://filmovi/films/filmoveTest/" +id,String.class);
+		return name;
+	}*/
+	
+	@RequestMapping(value="/Glumci/getMoviesById/{id}", produces = "application/json")
+	public String getMoviesById(@PathVariable("id") Integer id)
+	{
+		String name=restTemp.getForObject("http://filmovi/films/filmoveOdGlumca/" +id,String.class);
+		
 		return name;
 	}
 	

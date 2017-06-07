@@ -1,0 +1,23 @@
+  <h2>Rezultati pretrage: </h2>
+
+
+<div ng-controller="pretragaController">
+  <h3>Filmovi: </h3>
+  <div class="row" >
+    <div class="col-sm-4" ng-repeat="x in sviFilmoviPretraga">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTQzMzk4NTk5Nl5BMl5BanBnXkFtZTgwNjU0ODE5MDI@._V1_.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><a href="">{{x.name}}</a></div>
+      </div>
+    </div>
+          <hr>
+    
+<!--      <div ng-controller="pretragaController">
+  <h2>Glumci</h2>
+  <div class="row" >
+    <div class="col-sm-4" ng-repeat="x in sviGlumciPretraga">
+      <div class="panel panel-primary">
+        <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTQzMzk4NTk5Nl5BMl5BanBnXkFtZTgwNjU0ODE5MDI@._V1_.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><a href="/glumac/{{x.glumacID}}">{{x.firstName}} {{x.lastName}}</a></div>
+      </div>
+    </div> -->

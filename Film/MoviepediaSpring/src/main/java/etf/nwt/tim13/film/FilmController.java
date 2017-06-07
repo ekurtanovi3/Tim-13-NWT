@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,7 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.Resources;
-
+@CrossOrigin
 @RestController
 //@RequestMapping("/films")
 public class FilmController {
@@ -85,9 +86,9 @@ public class FilmController {
 	}
 	
 	@RequestMapping(value="/films/filmoveOdGlumca/{id}")
-	public List<FilmEntity> findFilmoveOdGlumca(@PathVariable Integer actorId)
+	public List<FilmEntity> findFilmoveOdGlumca(@PathVariable Integer id)
 	 {
-		return filmService.findFilmoveOdGlumca(actorId);
+		return filmService.findFilmoveOdGlumca(id);
 	}
 	@RequestMapping(value="/films/filmoveTest/{id}")
 	public String filmoveTest(@PathVariable Integer id)
