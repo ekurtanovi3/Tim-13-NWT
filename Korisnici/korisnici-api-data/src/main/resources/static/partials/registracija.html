@@ -4,35 +4,56 @@
 <div class="col-sm-6">
   <center><h2>Registracija</h2></center>
 <br>
-  <form >
+  <form name="myForm" novalidate >
   <div class="form-group">
       <label for="usernameInput">Username:</label>
-      <input type="text" ng-model="user.username" class="form-control" id="usernameInput" placeholder="Username" name="usernameInput">
+      <input type="text" ng-model="user.username" class="form-control" id="usernameInput" placeholder="Username" name="usernameInput" required>
+    <span style="color:red" ng-show="myForm.usernameInput.$dirty && myForm.usernameInput.$invalid">
+<span ng-show="myForm.usernameInput.$error.required">Username is required.</span>
+</span>
     </div>
     <div class="form-group">
       <label for="passwordInput">Password:</label>
-      <input type="password" ng-model="user.password" class="form-control" id="passwordInput" placeholder="Password" name="passwordInput">
+      <input type="password" ng-model="user.password" class="form-control" id="passwordInput" placeholder="Password" name="passwordInput" required>
+    <span style="color:red" ng-show="myForm.passwordInput.$dirty && myForm.passwordInput.$invalid">
+<span ng-show="myForm.passwordInput.$error.required">Password is required.</span>
+</span>
     </div>
     
   <div class="form-group">
       <label for="imeInput">Ime:</label>
-      <input type="text" ng-model="user.ime" class="form-control" id="imeInput" placeholder="ime" name="imeInput">
+      <input type="text" ng-model="user.ime" class="form-control" id="imeInput" placeholder="ime" name="imeInput" required>
+    <span style="color:red" ng-show="myForm.imeInput.$dirty && myForm.imeInput.$invalid">
+<span ng-show="myForm.imeInput.$error.required">Ime is required.</span>
+</span>
     </div>
     
   <div class="form-group">
       <label for="prezimeInput">Prezime:</label>
-      <input type="text" ng-model="user.prezime" class="form-control" id="prezimeInput" placeholder="prezime" name="preimeInput">
+      <input type="text" ng-model="user.prezime" class="form-control" id="prezimeInput" placeholder="prezime" name="prezimeInput" required>
+    <span style="color:red" ng-show="myForm.prezimeInput.$dirty && myForm.prezimeInput.$invalid">
+<span ng-show="myForm.prezimeInput.$error.required">Prezime is required.</span>
+</span>
     </div>
     <div class="form-group">
       <label for="e-mail">Email:</label>
       <input type="email" ng-model="user.email" class="form-control" id="e-mail" placeholder="e-mail" name="e-mail">
     </div>
     <br><br>
-    <button ng-click="registrujKorisnika()">Registracija</button>
+    <button type="submit" 
+     ng-disabled="myForm.$invalid"
+    ng-click="registrujKorisnika()">Registracija</button>
+    <span style="color:green" ng-show="myForm.$submitted">Uspješno ste se registrovali.</span>
+    
   </form>
   </div>
   <div class="col-sm-3">
     </div>
  </div>
+ 
+ <!--  && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid" 
+ ng-disabled="myForm.usernameInput.$error.required || myForm.usernameInput.$untouched"
+ ng-disabled="myForm.$invalid"
+ -->
  
  

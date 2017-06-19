@@ -28,6 +28,13 @@ public interface Actor_Movie_Repository extends CrudRepository<Actor_Movie, Inte
 	public List<Integer> findMoviesIDsByActor(Integer actorId);
 	
 	
+
+	@Query ("SELECT am.actorFK FROM Actor_Movie am WHERE am.movieFK= ?1")
+	public List<Integer> findActorFKByMovieFK(Integer actorId);
+	
+
+	
+	
 	
 	
 	

@@ -1,5 +1,6 @@
 package etf.nwt;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
 
 @CrossOrigin
 @RestController
@@ -64,5 +66,16 @@ public class GlumciController {
 		
 		return name;
 	}
+	
+	@RequestMapping(value="/Glumci/findGlumciByIds/{ids}")
+	public List<Glumci> findByIds(@PathVariable List<Long> ids)
+	{
+		List<Integer> list = new ArrayList<Integer>();
+		for(Long i: ids){
+		list.add(i.intValue());
+		}
+		return GlumciService.findByIds(list);
+	}
+	
 	
 }

@@ -8,6 +8,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
 
 
 
@@ -55,6 +57,15 @@ public class GlumciService {
 		GlumciRepository.save(glumci);
 		
 	}
+	
+	public List<Glumci> findByIds(@PathVariable List<Integer> ids)
+    {	
+		List<Glumci> glumci = new ArrayList<>();
+	    glumci=GlumciRepository.findByIds(ids);
+	    return glumci;
+
+		}
+
 	
 	
 	// new services

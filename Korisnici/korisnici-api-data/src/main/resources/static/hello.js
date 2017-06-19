@@ -76,13 +76,46 @@ hello.controller('glumacController', function($scope, $http, productService) {
     $scope.$routeParams = $routeParams;
 })
 */
-app.controller('filmoviController', function($scope, $routeParams, $http) {
-    $scope.name = 'filmoviController';
+app.controller('filmoviController', function($scope, $routeParams, $http,$route) {
+    //$scope.name = 'filmoviController';
    // $scope.params = $routeParams;
+   // $scope.myOrderBy = 'id';
+	$scope.sort='najstariji';
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+        
+
+        if(x=='id')
+        	x='najstariji';
+        if(x=='-id')
+        	x='najnoviji';
+        if(x=='name')
+        	x='naziv A-Z';
+        if(x=='-name')
+        	x='naziv Z-A';
+    	$scope.sort=x;
+
+       // $route.reload();
+
+    }
+   
     $http.get('http://localhost:8083/films/').
     then(function(response) {
         $scope.sviFilmovi = response.data;
+       // $scope.myOrderBy = 'name';
+
     });
+    
+
+})
+
+app.controller('sortiranjeController', function($scope, $route) {
+   
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+       // $route.reload();
+
+    }
 })
 /*
 .controller('glumciController', function($scope, $routeParams, $http) {
@@ -92,7 +125,7 @@ app.controller('filmoviController', function($scope, $routeParams, $http) {
 })
 */
 app.controller('glumacController', function($scope, $routeParams, $http) {
-    $scope.name = 'glumacController';
+    //$scope.name = 'glumacController';
     $scope.params = $routeParams;
     $http.get('http://localhost:8084/Glumci/'+$routeParams.glumacId).
     then(function(response) {
@@ -125,21 +158,92 @@ app.controller('pretragaController', function($scope, $routeParams,$http) {
 app.controller('filmController', function($scope, $routeParams, $http) {
     $scope.name = 'filmController';
     $scope.params = $routeParams;
-    $http.get('http://localhost:8083/films/'+$routeParams.filmId).
+    //$scope.komentariFilmUserIds = [];
+var ids=[];
+var idsGlumci=[];
+
+$http.get('http://localhost:8083/films/'+$routeParams.filmId).
     then(function(response) {
         $scope.film = response.data;
     });
+    
+
+    $http.get('http://localhost:8083/actor_movie/idGlumacaOdFilma/'+$routeParams.filmId).
+     then(function(response) {
+         idsGlumci = response.data;
+         
+         //var parsed = JSON.stringify(ids);
+
+       x = "";
+       for (i in idsGlumci) {
+           
+               x += idsGlumci[i]+",";
+       }
+       
+       x = x.substring(0, x.length - 1);
+   
+    
+          $http.get('http://localhost:8084/Glumci/findGlumciByIds/'+x).
+          then(function(response) {
+         $scope.filmGlumci = response.data;
+     });
+     });
+
+    
    $http.get('http://localhost:8081/komentariPoFilmu/'+$routeParams.filmId).
     then(function(response) {
         $scope.komentariFilm = response.data;
     });
+   
+
+   $http.get('http://localhost:8081/komentariPoFilmuWithUserIds/'+$routeParams.filmId).
+   then(function(response) {
+       ids = response.data;
+       
+       //var parsed = JSON.stringify(ids);
+
+     x = "";
+     for (i in ids) {
+         
+             x += ids[i]+",";
+     }
+     
+     x = x.substring(0, x.length - 1);
+ 
+  
+        $http.get('http://localhost:8082/Korisnici/findByUserIds/'+x).
+        then(function(response) {
+        	var korisnici=response.data;
+        	var order = new Array();
+
+        	for (i in ids)
+        	{        	for(j in korisnici )
+
+        	 {
+                if(korisnici[j].id==ids[i])
+                {order.push(korisnici[j]); 
+                break;
+
+                }
+
+        		
+        }
+        }
+
+            $scope.komentariFilmUser = order;
+        });
+   });
+
+
+
+   
     
 })
 
 
 app.controller('slanjeKomentaraController',
-		['$scope','$http', 
-		function($scope,$http) {
+		['$scope','$http', '$route',
+		function($scope,$http,$route) {
 $scope.posaljiKomentar=function(tekst){
 	var parameter = JSON.stringify({"idKomentara":11212,"tekstKomentara":tekst,"idUsera":1,"idFilma":1 });
 
@@ -149,7 +253,8 @@ $scope.posaljiKomentar=function(tekst){
     		  data: parameter,
     		   headers: {
     			   'Content-Type': 'application/json'    	   }
-    		}).then(function(response){});    }}
+    		}).then(function(response){        $route.reload();
+});    }}
 ]
 )
 

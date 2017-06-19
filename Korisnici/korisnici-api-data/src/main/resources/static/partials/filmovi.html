@@ -1,7 +1,22 @@
 <div id="filmsTest"  ng-controller="filmoviController">
+   <div class="dropdown">
+
+   <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"  >Sortiraj prema: {{sort}}
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="orderByMe('name')" >naziv A-Z</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="orderByMe('-name')">naziv Z-A</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="orderByMe('-id')">najnoviji</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="orderByMe('id')">najstariji</a></li>
+      
+      </ul>
+  </div> 
   <h2>Filmovi</h2>
+  <br>
+ 
+  <br>
   <div class="row" >
-    <div class="col-sm-4" ng-repeat="x in sviFilmovi">
+    <div class="col-sm-4" ng-repeat="x in sviFilmovi | orderBy:myOrderBy">
       <div class="panel panel-primary">
         <div class="panel-body"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTQzMzk4NTk5Nl5BMl5BanBnXkFtZTgwNjU0ODE5MDI@._V1_.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer"><a href="film/{{x.id}}">{{x.name}}</a></div>

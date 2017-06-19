@@ -6,6 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.mysql.fabric.Response;
 
@@ -75,6 +77,9 @@ public List<Actor_Movie> getAllactor_movie(){
 	public List<Integer> findMoviesIDsByActor(Integer actorId) {
 		return amRepository.findMoviesIDsByActor(actorId);
 		
+	}
+	public List<Integer> findActorFKByMovieFK( Integer id) {
+		return amRepository.findActorFKByMovieFK(id);
 	}
 	
 	

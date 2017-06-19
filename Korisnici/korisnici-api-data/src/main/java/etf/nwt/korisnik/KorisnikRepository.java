@@ -19,6 +19,9 @@ public interface KorisnikRepository extends CrudRepository<Korisnik,Integer> {
 	@Query("SELECT k FROM Korisnik k WHERE k.username=?1")
 	public List<Korisnik> findByUsername(@Param("username")String username);
 	
+	@Query( "SELECT k FROM Korisnik k WHERE k.id in :ids" )
+	public List<Korisnik> findByIds(@Param("ids") List<Integer> idUserList);
+	
 	
 	
 

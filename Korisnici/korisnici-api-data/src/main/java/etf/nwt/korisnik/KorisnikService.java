@@ -10,6 +10,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.mysql.jdbc.Connection;
 
@@ -98,6 +99,14 @@ public class KorisnikService  {
 		//	return korisnici(sortByIdAsc());
 	      
 	   // }
+
+	public List<Korisnik> findByIds(@PathVariable List<Integer> ids)
+    {	
+		List<Korisnik> korisnici = new ArrayList<>();
+	    korisnici=korisnikRepository.findByIds(ids);
+	    return korisnici;
+
+		}
 
 	
 	 private Sort sortByIdAsc() {

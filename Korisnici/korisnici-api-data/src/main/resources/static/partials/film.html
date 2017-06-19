@@ -17,7 +17,7 @@
       <p>Direktor: {{film.director}}</p>
       <span>Glumci: </span>
       <span ng-repeat="x in filmGlumci"> 
-      {{x.firstNname}} {{x.lastNname}}, 
+      {{x.firstName}} {{x.lastName}}, 
       </span>
     </div>
     <div class="col-sm-2">
@@ -54,26 +54,17 @@
   <!-- Left-aligned media object -->
   <div class="media" ng-repeat="x in komentariFilm">
     <div class="media-left" >
-      <img src="img_avatar1.png" class="media-object" style="width:50px">
+      <img src="http://www.sportske.net/userAPI/images/avatars/default_avatar.png" class="media-object" style="width:50px">
     </div>
     <div class="media-body">
-      <h4 class="media-heading">Anonymus</h4>
+      <h4 class="media-heading">{{komentariFilmUser[$index].username}}</h4>
       <p>{{x.tekstKomentara}}<p>
     </div>
       <hr>
 
   </div>
   
-  <!-- Right-aligned media object -->
-  <div class="media">
-    <div class="media-body">
-      <h4 class="media-heading">Right-aligned</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="media-right">
-      <img src="img_avatar1.png" class="media-object" style="width:60px">
-    </div>
-  </div>
+
 </div>
 </div>
 

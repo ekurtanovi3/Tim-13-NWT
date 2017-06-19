@@ -2,6 +2,7 @@
 package etf.nwt.korisnik;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.mapping.Map;
@@ -29,6 +30,7 @@ public class KorisnikController {
 
 	@Autowired
 	private KorisnikService korisnikService;
+	
 	
 	@RequestMapping("/Korisnici")
 	public List<Korisnik> getAllKorisnici()
@@ -95,6 +97,15 @@ public class KorisnikController {
 		
 	}
 	
+	@RequestMapping(value="/Korisnici/findByUserIds/{ids}")
+	public List<Korisnik> findByIds(@PathVariable List<Long> ids)
+	{
+		List<Integer> list = new ArrayList<Integer>();
+		for(Long i: ids){
+		list.add(i.intValue());
+		}
+		return korisnikService.findByIds(list);
+	}
 	
 	
 	}

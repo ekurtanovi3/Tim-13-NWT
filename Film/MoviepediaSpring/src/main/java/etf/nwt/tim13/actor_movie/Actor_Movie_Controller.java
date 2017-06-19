@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,7 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 //import com.netflix.discovery.DiscoveryClient;
 import com.netflix.ribbon.proxy.annotation.Http.HttpMethod;
 
-
+@CrossOrigin
 @RestController
 public class Actor_Movie_Controller {
 	
@@ -67,6 +68,10 @@ public class Actor_Movie_Controller {
 	@RequestMapping("/actor_movie/idfilmovaOdGlumca/{id}")
 	public List<Integer> findMoviesIDsByActor(@PathVariable Integer id) {
 		return amService.findMoviesIDsByActor(id);
+	}
+	@RequestMapping("/actor_movie/idGlumacaOdFilma/{id}")
+	public List<Integer> findActorFKByMovieFK(@PathVariable Integer id) {
+		return amService.findActorFKByMovieFK(id);
 	}
 	
 	
